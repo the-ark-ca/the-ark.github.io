@@ -150,6 +150,8 @@
 
     <script>
     let forwardTimes = []
+    let withBoxes = true
+
     function updateTimeStats(timeInMs) {
       forwardTimes = [timeInMs].concat(forwardTimes).slice(0, 30)
       const avgTimeInMs = forwardTimes.reduce((total, t) => total + t) / forwardTimes.length
