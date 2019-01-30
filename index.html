@@ -142,11 +142,11 @@
 
     <!-- js imports --!>
     <script src="/assets/js/face-api.js/dist/face-api.js"></script>
-    <script src="/assets/js/face-api.js/examples/examples-browser/public/js/commons.js"></script>
     <script src="/assets/js/face-api.js/examples/examples-browser/public/js/drawing.js"></script>
     <script src="/assets/js/face-api.js/examples/examples-browser/public/js/faceDetectionControls.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.2/dist/tf.min.js"></script>
 
     <script>
     let forwardTimes = []
@@ -181,7 +181,7 @@
     }
     function updateResults() {}
     $(document).ready(function() {
-      renderNavBar('#navbar', 'webcam_face_detection')
+      //renderNavBar('#navbar', 'webcam_face_detection')
       initFaceDetectionControls()
       run()
     })
